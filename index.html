@@ -265,7 +265,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-07-16 16:07:35 / Modified: 16:15:24" itemprop="dateCreated datePublished" datetime="2023-07-16T16:07:35+08:00">2023-07-16</time>
+              <time title="Created: 2023-07-16 16:07:35 / Modified: 16:43:04" itemprop="dateCreated datePublished" datetime="2023-07-16T16:07:35+08:00">2023-07-16</time>
             </span>
 
           
@@ -283,17 +283,13 @@
 <p>光纤通信最大的特点就是<strong>大容量长距离传输</strong>。</p>
 <p>优点：</p>
 <ul>
-<li><p>容许频带很宽，传输容量大</p>
-</li>
-<li><p>损耗很小，误码率小传输距离长</p>
-</li>
-<li><p>电磁兼容性好和环境兼容性好</p>
-</li>
-<li><p>线径轻，体积小，可绕性好</p>
-</li>
-<li><p>资源丰富等</p>
-</li>
+<li>容许频带很宽，传输容量大</li>
+<li>损耗很小，误码率小传输距离长</li>
+<li>电磁兼容性好和环境兼容性好</li>
+<li>线径轻，体积小，可绕性好</li>
+<li>资源丰富等</li>
 </ul>
+<!----more---->
 <p>缺点：</p>
 <ul>
 <li><p>质的脆</p>
@@ -321,8 +317,8 @@
 <p>纤芯作用：传输主要的光能量（n1&gt;n2）。</p>
 <p>包层作用：为光的传输提供反射面和光隔离，并起一定的机械保护作用。</p>
 <p>相对折射率差——越大，把光能量束缚在纤芯的能量越强，但信息传输容量却越小。</p>
-<p>$$<br>\varDelta &#x3D;\left( n_1-n_2 \right) &#x2F;n_1\text{（一般）}&#x3D;\left( n_{1}^{2}-n_{2}^{2} \right) &#x2F;2n_{1}^{2}\text{（通用）}<br>$$</p>
-<h4 id="2、光纤分类"><a href="#2、光纤分类" class="headerlink" title="2、光纤分类"></a>2、光纤分类</h4><ol>
+<script type="math/tex; mode=display">
+\varDelta =\left( n_1-n_2 \right) /n_1\text{（一般）}=\left( n_{1}^{2}-n_{2}^{2} \right) /2n_{1}^{2}\text{（通用）}</script><h4 id="2、光纤分类"><a href="#2、光纤分类" class="headerlink" title="2、光纤分类"></a>2、光纤分类</h4><ol>
 <li><p>利用材料分类</p>
 <ul>
 <li><p>石英系</p>
@@ -369,18 +365,16 @@
 <li><p>椭圆芯——双折射特性，可以保持偏振状态。</p>
 </li>
 </ul>
-<p>通信用光线分类</p>
-<ul>
-<li><p>突变型多模光纤（SIF）</p>
-</li>
-<li><p>渐变型多模光纤（GIF）</p>
-</li>
-<li><p>单模光纤（SMF）</p>
-</li>
-</ul>
 </li>
 </ol>
-<h4 id="3、光纤传输理论"><a href="#3、光纤传输理论" class="headerlink" title="3、光纤传输理论"></a>3、光纤传输理论</h4><ol>
+<pre><code>通信用光线分类
+
+-   突变型多模光纤（SIF）
+
+-   渐变型多模光纤（GIF）
+
+-   单模光纤（SMF）
+</code></pre><h4 id="3、光纤传输理论"><a href="#3、光纤传输理论" class="headerlink" title="3、光纤传输理论"></a>3、光纤传输理论</h4><ol>
 <li><p>几何光学理论</p>
 <ul>
 <li><p>空间分布——<strong>数值孔径</strong></p>
@@ -388,38 +382,37 @@
 <li><p>时间分布——<strong>时间延迟</strong></p>
 </li>
 </ul>
-<p>突变型多模光纤</p>
-<p>$$<br>NA&#x3D;n_0\sin \theta <em>c&#x3D;\sqrt{n</em>{1}^{2}-n_{2}^{2}}\approx n_1\sqrt{2\varDelta}<br>$$</p>
-<p>$$<br>\varDelta \tau &#x3D;\frac{L}{2n_1c}\theta _{c}^{2}&#x3D;\frac{L}{2n_1c}\left( NA \right) ^2\approx \frac{n_1L}{c}\varDelta<br>$$</p>
-<p>渐变型多模光纤</p>
-<p>自聚焦效应：不同入射角相应的光线，虽然经历的路程不同，但是最后都会聚在P点上。幅度的大小却决于入射角。且其时间延迟近似相等，路程长的光纤传播速度快，相互抵消。</p>
 </li>
+</ol>
+<p>   突变型多模光纤</p>
+<script type="math/tex; mode=display">
+   NA=n_0\sin \theta _c=\sqrt{n_{1}^{2}-n_{2}^{2}}\approx n_1\sqrt{2\varDelta}</script><script type="math/tex; mode=display">
+   \varDelta \tau =\frac{L}{2n_1c}\theta _{c}^{2}=\frac{L}{2n_1c}\left( NA \right) ^2\approx \frac{n_1L}{c}\varDelta</script><p>   渐变型多模光纤</p>
+<p>   自聚焦效应：不同入射角相应的光线，虽然经历的路程不同，但是最后都会聚在P点上。幅度的大小却决于入射角。且其时间延迟近似相等，路程长的光纤传播速度快，相互抵消。</p>
+<ol>
 <li><p>波动理论</p>
 <p>光纤传输模式的电磁场分布和性质取决于特征参数。</p>
-<p>$$<br>V^2&#x3D;u^2+w^2\text{（}u\text{、}w\text{、V为引入的无量纲常数）}<br>$$</p>
-<p>$$<br>\text{（特征参数}u\text{、}w\text{、}\beta \text{）}<br>$$</p>
-<p>前两个特征参数决定纤芯和包层横向电磁场的分布，为横向传输常数；最后一个决定纵向电磁场分布和传输性质，为（纵向）传输常数。</p>
-<img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304071646555.png" alt="image-20230404202112189" style="zoom: 20%;" />
-$$
-V=\frac{2\pi a}{\lambda}\sqrt{n_{1}^{2}-n_{2}^{2}}
-$$
-**模式截止状态**指w=0介于传输模式和辐射模式的临界状态。当w>0时，在包层内的电磁场消失；当w<0时，电磁场将在包层中振荡，传输模式将转换为辐射模式。
-当v=0时，电磁场分为两类，一类在传输方向上无磁场的模式称为横磁模波；一类在传输方向上没有电场的模式叫做横电模。当v不等于0时，这些模式称为混合模。混合模也分为两类。
-**模式远离截止** 当V趋近于无穷大时，w增长很快，当w趋近于无穷，u只能增加到一个有限值，该状态为模式远离截止。
-
-<img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304071646617.png" alt="image-20230406201012760" style="zoom:20%;" />
-</li>
-<li><p>多模渐变型光纤的模式特性<br> 模式总数的计算</p>
-</li>
+<script type="math/tex; mode=display">
+V^2=u^2+w^2\text{（}u\text{、}w\text{、V为引入的无量纲常数）}</script></li>
 </ol>
-<p>$$<br>M&#x3D;\left( \frac{g}{g+2} \right) a^2k^2n_{1}^{2}\varDelta &#x3D;\left( \frac{g}{g+2} \right) \frac{V^2}{2}<br>$$</p>
-<p>​         对于突变型光纤，g趋近于无穷。对于平方律渐变型光纤，g取2。——渐变型光纤中存在<strong>模式群</strong>，可将部分模式合并。其中g为折射率分布指数。</p>
-<ol start="4">
+<script type="math/tex; mode=display">
+   \text{（特征参数}u\text{、}w\text{、}\beta \text{）}</script><p>   前两个特征参数决定纤芯和包层横向电磁场的分布，为横向传输常数；最后一个决定纵向电磁场分布和传输性质，为（纵向）传输常数。</p>
+<p>   <img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304071646555.png" alt="image-20230404202112189" style="zoom: 20%;" /></p>
+<script type="math/tex; mode=display">
+   V=\frac{2\pi a}{\lambda}\sqrt{n_{1}^{2}-n_{2}^{2}}</script><p>   <strong>模式截止状态</strong>指w=0介于传输模式和辐射模式的临界状态。当w&gt;0时，在包层内的电磁场消失；当w&lt;0时，电磁场将在包层中振荡，传输模式将转换为辐射模式。<br>   当v=0时，电磁场分为两类，一类在传输方向上无磁场的模式称为横磁模波；一类在传输方向上没有电场的模式叫做横电模。当v不等于0时，这些模式称为混合模。混合模也分为两类。<br>   <strong>模式远离截止</strong> 当V趋近于无穷大时，w增长很快，当w趋近于无穷，u只能增加到一个有限值，该状态为模式远离截止。</p>
+<p>   <img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304071646617.png" alt="image-20230406201012760" style="zoom:20%;" /></p>
+<ol>
+<li>多模渐变型光纤的模式特性<br> 模式总数的计算</li>
+</ol>
+<script type="math/tex; mode=display">
+M=\left( \frac{g}{g+2} \right) a^2k^2n_{1}^{2}\varDelta =\left( \frac{g}{g+2} \right) \frac{V^2}{2}</script><p>​         对于突变型光纤，g趋近于无穷。对于平方律渐变型光纤，g取2。——渐变型光纤中存在<strong>模式群</strong>，可将部分模式合并。其中g为折射率分布指数。</p>
+<ol>
 <li><p>单模光纤的模式特性</p>
-<p>单模条件：–临界波长<br>$$<br>V&#x3D;2.045\frac{\lambda _c}{\lambda}\le 2.405<br>$$</p>
+<p>单模条件：—临界波长</p>
+<script type="math/tex; mode=display">
+V=2.045\frac{\lambda _c}{\lambda}\le 2.405</script><p>当两个偏振模应外力其他条件改变传输常数之后,会引起偏振态的变化,会有双折射,产生偏振色散.解决的办法为人为引入强双折射抵消或者实现单模单偏振传输。</p>
 </li>
 </ol>
-<p>当两个偏振模应外力其他条件改变传输常数之后,会引起偏振态的变化,会有双折射,产生偏振色散.解决的办法为人为引入强双折射抵消或者实现单模单偏振传输。</p>
 <h4 id="4、光纤传输特性"><a href="#4、光纤传输特性" class="headerlink" title="4、光纤传输特性"></a>4、光纤传输特性</h4><p>传输后的信号不仅幅度要减小，波形也要展宽。产生信号的畸变的原因主要是光纤中存在色散。<strong>色散和损耗</strong>是光纤中最重要的传输特性。损耗限制系统的传输距离，色散则限制系统的传输带宽。</p>
 <p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304111135301.png" alt="光纤传输特性"></p>
 <h5 id="光纤色散"><a href="#光纤色散" class="headerlink" title="光纤色散"></a>光纤色散</h5><p>色散是在光纤中传输的光信号，由于不同成分的光的传输时间不同而产生的一种物理效应。</p>
@@ -434,21 +427,20 @@ $$
 <p>波导结构参数与波长有关而产生的。</p>
 </li>
 </ul>
-<img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304071648547.png" alt="image-20230406201124244" style="zoom:20%;" />
-
+<p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304071648547.png" alt="image-20230406201124244" style="zoom:20%;" /></p>
 <p>色散在频域里限制了传输信号的带宽，在时域里引起信号的展宽。色散通常用3dB的光带宽或者脉冲展宽表示。</p>
 <ol>
 <li><p>多模光纤色散</p>
-<p>均方根脉冲展宽随光源谱宽的增大而增大，并在很大程度上取决折射率分布指数g。当g&#x3D;g0，均方根脉冲展宽取最小值。g的最佳值为2+e。</p>
+<p>均方根脉冲展宽随光源谱宽的增大而增大，并在很大程度上取决折射率分布指数g。当g=g0，均方根脉冲展宽取最小值。g的最佳值为2+e。</p>
 </li>
 <li><p>单模光纤色散</p>
 <p>理想单模光纤没有模式色散，只有色度色散（材料色散和波导色散），是传播时间随波长变化产生的结果。</p>
 </li>
 </ol>
-<img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304071648206.png" alt="image-20230406201229160" style="zoom:15%;" />
-
-<h5 id="光纤损耗"><a href="#光纤损耗" class="headerlink" title="光纤损耗"></a>光纤损耗</h5><p>损耗系数为：<br>$$<br>\alpha &#x3D;\frac{10}{L}\lg \frac{P_i}{Po}<br>$$</p>
-<ul>
+<p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304071648206.png" alt="image-20230406201229160" style="zoom:15%;" /></p>
+<h5 id="光纤损耗"><a href="#光纤损耗" class="headerlink" title="光纤损耗"></a>光纤损耗</h5><p>损耗系数为：</p>
+<script type="math/tex; mode=display">
+\alpha =\frac{10}{L}\lg \frac{P_i}{Po}</script><ul>
 <li><p>吸收损耗</p>
 <p>是由二氧化硅材料引起的固有吸收和由杂质引起的吸收产生的。包括<strong>杂质吸收、红外吸收和紫外吸收</strong>。</p>
 <p>在氢氧负离子吸收峰两侧1.31微米和1.55微米存在两个损耗很小的波长“窗口”。</p>
@@ -457,7 +449,8 @@ $$
 <p>主要由材料微观密度不均匀引起的<strong>瑞利散射</strong>和由光纤<strong>结构缺陷</strong>（如气泡）引起的散射产生的。</p>
 </li>
 </ul>
-<h5 id="光线标准和应用"><a href="#光线标准和应用" class="headerlink" title="光线标准和应用"></a>光线标准和应用</h5><table>
+<h5 id="光线标准和应用"><a href="#光线标准和应用" class="headerlink" title="光线标准和应用"></a>光线标准和应用</h5><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>ITU-T编号</th>
@@ -466,7 +459,8 @@ $$
 <th>应用</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>G.651</td>
 <td>多模渐变型光纤（GIF）</td>
 <td>无</td>
@@ -500,9 +494,10 @@ $$
 <td>G.655</td>
 <td>非零色散光线</td>
 <td></td>
-<td></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="5、光缆"><a href="#5、光缆" class="headerlink" title="5、光缆"></a>5、光缆</h4><p>对光缆的基本要求是保护光纤的机械强度和传输特性。</p>
 <p>保护光纤固有机械强度的方法采用塑料被覆和应力筛选。光线从高温中拉出后立即用软塑料进行一次被覆和应力筛选，除去断裂光纤，利用硬塑料进行二次被覆。</p>
 <h4 id="6、光线特性测量"><a href="#6、光线特性测量" class="headerlink" title="6、光线特性测量"></a>6、光线特性测量</h4><h3 id="三、光器件"><a href="#三、光器件" class="headerlink" title="三、光器件"></a>三、光器件</h3><h4 id="1、光源"><a href="#1、光源" class="headerlink" title="1、光源"></a>1、光源</h4><p>光源是光发射机的重要器件，作用为把电信号转换为光信号。</p>
@@ -510,7 +505,7 @@ $$
 <p>受激辐射、受激吸收、自发辐射。</p>
 <ul>
 <li><p>半导体激光二极管或称激光器（LD）</p>
-<p>半导体激光器是向半导体PN结注入电流，实现<strong>粒子数反转分布</strong>，产生<strong>受激辐射</strong>，再利用<strong>谐振腔的正反馈</strong>，实现光发大而产生激光振荡的。[[专业课学习&#x2F;光纤通信&#x2F;PN结 粒子数反转 光电效应]]</p>
+<p>半导体激光器是向半导体PN结注入电流，实现<strong>粒子数反转分布</strong>，产生<strong>受激辐射</strong>，再利用<strong>谐振腔的正反馈</strong>，实现光发大而产生激光振荡的。[[专业课学习/光纤通信/PN结 粒子数反转 光电效应]]</p>
 <p>粒子数分布反转是产生受激辐射的必要条件，谐振腔可以对光的频率和方向进行选择。</p>
 <p>半导体激光器的基本结构为双异质结（DH）平面条形结构。</p>
 <p>主要特性：</p>
@@ -536,7 +531,7 @@ $$
 </li>
 <li><p>线路编码电路</p>
 </li>
-<li><p>均衡[[专业课学习&#x2F;通信原理&#x2F;2均衡]]消除码间干扰</p>
+<li><p>均衡[[专业课学习/通信原理/2均衡]]消除码间干扰</p>
 </li>
 </ul>
 <p>调制特性</p>
@@ -569,7 +564,7 @@ $$
 <li><p>响应时间</p>
 </li>
 <li><p>噪声——直接影响光接收机的灵敏度。</p>
-<img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304111008523.png" alt="光电二极管噪声" style="zoom:33%;" />
+<p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304111008523.png" alt="光电二极管噪声" style="zoom:33%;" /></p>
 </li>
 <li><p>波长响应范围</p>
 </li>
@@ -585,10 +580,11 @@ $$
 <h4 id="4、光接收机"><a href="#4、光接收机" class="headerlink" title="4、光接收机"></a>4、光接收机</h4><p>数字光接收机的基本功能是把经光纤传输后幅度被衰减、波形被展宽的微弱光信号转换为电信号，并放大处理，恢复为原始的数子码流。</p>
 <p>主要的性能指标为<strong>灵敏度和动态范围</strong>。</p>
 <p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304110936182.png" alt="image-20230411093438519"></p>
-<h5 id="噪声特性"><a href="#噪声特性" class="headerlink" title="噪声特性"></a>噪声特性</h5><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304111002838.png" alt="噪声" style="zoom:33%;" />
-
+<h5 id="噪声特性"><a href="#噪声特性" class="headerlink" title="噪声特性"></a>噪声特性</h5><p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304111002838.png" alt="噪声" style="zoom:33%;" /></p>
 <h5 id="误码率"><a href="#误码率" class="headerlink" title="误码率"></a>误码率</h5><p>超扰比</p>
-<h5 id="灵敏度"><a href="#灵敏度" class="headerlink" title="灵敏度"></a>灵敏度</h5><p>  衡量光接收机性能的综合指标，在保证通信质量（限定误码率或者信噪比）的条件下，光接收机所需的最小平均接受光功率。<br>$$<br>P_r&#x3D;10\lg \left[ \frac{\left&lt; P \right&gt; _{\min}\left( W \right)}{10^{-3}} \right] \left( dBm \right)<br>$$<br>在限定误码率条件下，决定光接收机灵敏度的主要因素是传输速率和光检测器、前置放大器的特性，特别是噪声特性。</p>
+<h5 id="灵敏度"><a href="#灵敏度" class="headerlink" title="灵敏度"></a>灵敏度</h5><p>  衡量光接收机性能的综合指标，在保证通信质量（限定误码率或者信噪比）的条件下，光接收机所需的最小平均接受光功率。</p>
+<script type="math/tex; mode=display">
+P_r=10\lg \left[ \frac{\left< P \right> _{\min}\left( W \right)}{10^{-3}} \right] \left( dBm \right)</script><p>在限定误码率条件下，决定光接收机灵敏度的主要因素是传输速率和光检测器、前置放大器的特性，特别是噪声特性。</p>
 <h5 id="自动增益与动态范围"><a href="#自动增益与动态范围" class="headerlink" title="自动增益与动态范围"></a>自动增益与动态范围</h5><p>主放大器的另一个功能是实现自动功率控制（AGC），使得光接收机的入射光变化时输出电流基本恒定。<br>动态范围（DR）的定义是：在限定误码率的条件下，光接收机所能承载的最大平均接受光功率与所需的最小平均接受光功率的比值。</p>
 <h4 id="5、无源器件"><a href="#5、无源器件" class="headerlink" title="5、无源器件"></a>5、无源器件</h4><ol>
 <li><p>连接器与接头</p>
@@ -628,24 +624,23 @@ $$
 </ul>
 </li>
 </ol>
-<h4 id="6、线路编码"><a href="#6、线路编码" class="headerlink" title="6、线路编码"></a>6、线路编码</h4><h5 id="扰码"><a href="#扰码" class="headerlink" title="扰码"></a>扰码</h5><p>[[专业课学习&#x2F;光纤通信&#x2F;信道编码——扰码]]：关于扰码的Verilog的仿真</p>
+<h4 id="6、线路编码"><a href="#6、线路编码" class="headerlink" title="6、线路编码"></a>6、线路编码</h4><h5 id="扰码"><a href="#扰码" class="headerlink" title="扰码"></a>扰码</h5><p>[[专业课学习/光纤通信/信道编码——扰码]]：关于扰码的Verilog的仿真</p>
 <h5 id="mBnB码"><a href="#mBnB码" class="headerlink" title="mBnB码"></a>mBnB码</h5><h5 id="插入码"><a href="#插入码" class="headerlink" title="插入码"></a>插入码</h5><h3 id="四、数字光纤系统"><a href="#四、数字光纤系统" class="headerlink" title="四、数字光纤系统"></a>四、数字光纤系统</h3><h4 id="1、两种传输体制"><a href="#1、两种传输体制" class="headerlink" title="1、两种传输体制"></a>1、两种传输体制</h4><ul>
 <li><p>准同步传输体制PDH ——适用于中、低速率点对点的传输，采用异步复用方式。</p>
 <ul>
-<li>E1速率——2.048Mb&#x2F;s（一次基群）中国、欧洲以及国际间连接采用 高次基群的话路数是低次基群的4的n次方倍。</li>
-<li>T1速率——1.544Mb&#x2F;s（一次基群）</li>
+<li>E1速率——2.048Mb/s（一次基群）中国、欧洲以及国际间连接采用 高次基群的话路数是低次基群的4的n次方倍。</li>
+<li>T1速率——1.544Mb/s（一次基群）</li>
 </ul>
 </li>
-<li><p>同步传输体制SDH[[专业课学习&#x2F;补充知识&#x2F;SDH体系]]</p>
+<li><p>同步传输体制SDH[[专业课学习/补充知识/SDH体系]]</p>
 <ol>
 <li><p>传输速率</p>
-<p>采用世界上统一的传输速率，也就是最基本的模块称为STM-1，传输速率为155.520Mb&#x2F;s；</p>
+<p>采用世界上统一的传输速率，也就是最基本的模块称为STM-1，传输速率为155.520Mb/s；</p>
 </li>
 <li><p>帧结构——以一定规律的组成块状帧结构。</p>
-<img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304122130434.png" alt="image-20230412201503311" style="zoom:50%;" />
-
+<p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304122130434.png" alt="image-20230412201503311" style="zoom:50%;" /></p>
 <p>这样的每帧共有9x270xN个字节，每个字节8比特，每秒传送8000帧，对于STM-1而言，传输速率为9x270x8</p>
-<p>x8000&#x3D;155.520Mbps，字节发送顺序为：由上往下逐行发送，每行先左后右。</p>
+<p>x8000=155.520Mbps，字节发送顺序为：由上往下逐行发送，每行先左后右。</p>
 <p>SDH帧大体分为三个部分：</p>
 <ul>
 <li>段开销（SOH）保证信息正常传输的附加字节，用于运行维护管理。段开销又分为再生子段开销（SOH）和复接子段开销（LOH）。前者占据前3行，后者占5-9行。</li>
@@ -656,7 +651,8 @@ $$
 <li><p>复用原理</p>
 <p>将低路支路信号复接为高速信号主要有两种传统方式：正码速调整法、固定位置换射法。</p>
 <p>载荷指针技术：映射（把支路信号适配装入虚容器的过程）——定位（管理单元指针AUPTR）——复用</p>
-<img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304151545084.png" alt="image-20230415154516662" style="zoom:20%;" /></li>
+<p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304151545084.png" alt="image-20230415154516662" style="zoom:20%;" /></p>
+</li>
 </ol>
 </li>
 <li><p>PDH与SDH的优缺点比较</p>
@@ -674,34 +670,7 @@ $$
 <ul>
 <li><p>误码率（BER）衡量传输系统的传输质量优劣的重要指标。</p>
 <p>误码率参数：</p>
-<table>
-<thead>
-<tr>
-<th>误码率参数</th>
-<th>定义</th>
-<th>指标</th>
-<th>长期平均误码率</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>劣化分（DM）</td>
-<td>BER劣于10^-6的分数</td>
-<td>&lt;10%</td>
-<td>&lt; 6.2✖10^-7</td>
-</tr>
-<tr>
-<td>严重误码秒（SES）</td>
-<td>BER劣于10^-3的分数</td>
-<td>&lt;0.2%</td>
-<td>&lt;  3✖10^-5</td>
-</tr>
-<tr>
-<td>误码秒（ES）</td>
-<td>BER不为0的秒数</td>
-<td>&lt;8%</td>
-<td>&lt;  1.3✖10^-6</td>
-</tr>
-</tbody></table>
+<p>| 误码率参数        | 定义               | 指标  | 长期平均误码率 |<br>| ————————- | ————————— | ——- | ——————— |<br>| 劣化分（DM）      | BER劣于10^-6的分数 | &lt;10%  | &lt; 6.2✖10^-7    |<br>| 严重误码秒（SES） | BER劣于10^-3的分数 | &lt;0.2% | &lt;  3✖10^-5     |<br>| 误码秒（ES）      | BER不为0的秒数     | &lt;8%   | &lt;  1.3✖10^-6   |</p>
 <p>严重误码秒用于检测突发性、集群性的误码出现。</p>
 </li>
 <li><p>抖动——数字信号传输过程中产生的一种瞬时不稳定现象。数字信号在各有效瞬时时对标准时间位置的偏差，偏差时间称为抖动幅度。</p>
@@ -711,10 +680,13 @@ $$
 </ul>
 <h4 id="3、系统的设计"><a href="#3、系统的设计" class="headerlink" title="3、系统的设计"></a>3、系统的设计</h4><p>系统设计的主要问题是确定<strong>中继距离</strong>。</p>
 <ol>
-<li><p>中继距离受到损耗的限制<br>$$<br>L&#x3D;\frac{P_t-P_r-2\alpha _c-M_e}{\alpha _f+\alpha _s+\alpha _m}<br>$$</p>
-</li>
-<li><p>中继距离受色散的限制<br>$$<br>L&#x3D;\frac{0.226\times 10^6}{f_b\left| C_0 \right|\sigma _{\lambda}}\left( \text{理论} \right)<br>$$<br>$$<br>L&#x3D;\frac{\varepsilon \times 10^6}{F_b\left| C_0 \right|\sigma _{\lambda}}\left( \text{实际} \right)<br>$$</p>
-</li>
+<li><p>中继距离受到损耗的限制</p>
+<script type="math/tex; mode=display">
+L=\frac{P_t-P_r-2\alpha _c-M_e}{\alpha _f+\alpha _s+\alpha _m}</script></li>
+<li><p>中继距离受色散的限制</p>
+<script type="math/tex; mode=display">
+L=\frac{0.226\times 10^6}{f_b\left| C_0 \right|\sigma _{\lambda}}\left( \text{理论} \right)</script><script type="math/tex; mode=display">
+L=\frac{\varepsilon \times 10^6}{F_b\left| C_0 \right|\sigma _{\lambda}}\left( \text{实际} \right)</script></li>
 <li><p>确定中继距离——选择较短的距离，作为最后的结果。</p>
 </li>
 </ol>
@@ -738,7 +710,9 @@ $$
 </li>
 </ul>
 <h4 id="2、D-IM光纤传输系统"><a href="#2、D-IM光纤传输系统" class="headerlink" title="2、D-IM光纤传输系统"></a>2、D-IM光纤传输系统</h4><p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304071932944.png" alt="image-20230407193236178"></p>
-<p>正弦信号直接光强调制系统的信噪比主要受<em>光接受机性能</em>的影响。评价该系统的传输质量的特性参数为<strong>信噪比（SNR）和信号失真（信号畸变）</strong>。<br>$$<br>\frac{S}{N}&#x3D;\frac{\text{信号功率}}{\text{噪声功率}}&#x3D;\frac{\text{均方信号电流}}{\text{均方噪声电流}}<br>$$<br>和SNR密切相关的一个参数是<strong>接收灵敏度</strong>。定义为：在限定信噪比条件下，光接收机所需的最小信号光功率，以dBm为单位。假设系统只有量子噪声（理想光接收机），这样确定的灵敏度为（最高）极限灵敏度。</p>
+<p>正弦信号直接光强调制系统的信噪比主要受<em>光接受机性能</em>的影响。评价该系统的传输质量的特性参数为<strong>信噪比（SNR）和信号失真（信号畸变）</strong>。</p>
+<script type="math/tex; mode=display">
+\frac{S}{N}=\frac{\text{信号功率}}{\text{噪声功率}}=\frac{\text{均方信号电流}}{\text{均方噪声电流}}</script><p>和SNR密切相关的一个参数是<strong>接收灵敏度</strong>。定义为：在限定信噪比条件下，光接收机所需的最小信号光功率，以dBm为单位。假设系统只有量子噪声（理想光接收机），这样确定的灵敏度为（最高）极限灵敏度。</p>
 <p>在大信号条件下，线性较差，发射机光源的输出功率特性是产生非线性失真的主要原因。</p>
 <p>非线性失真一般可以用<strong>幅度失真参数——微分增益（DG）和相位失真参数——微分相位（DP）</strong>表示。需要进行补偿。</p>
 <ul>
@@ -781,8 +755,7 @@ $$
 <p>三价铒粒子的能级特性——基态、亚稳态、稳态</p>
 </li>
 <li><p>放大器的构成与原理</p>
-<img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304151413665.png" alt="image-20230415141143106" style="zoom:25%;" />
-
+<p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304151413665.png" alt="image-20230415141143106" style="zoom:25%;" /></p>
 <p>掺铒光纤（EDF）和高功率泵浦光源是主要器件。</p>
 <p>980nm相比于1480nm的优点更为突出，980nm的泵浦光转换效率更高，且噪声较低，是未来发展的方向。</p>
 </li>
@@ -805,14 +778,8 @@ $$
 <li>单线双向传输——光通路在一根光纤上有同时向两个不同方向传输。</li>
 </ul>
 <p>WDM系统基本架构：</p>
-<img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304122140486.png" alt="image-20230412214022203" style="zoom: 25%;" />
-
-
-
-<h4 id="3、光滤波器——光栅"><a href="#3、光滤波器——光栅" class="headerlink" title="3、光滤波器——光栅"></a>3、光滤波器——光栅</h4><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304151413172.png" alt="image-20230415141207848" style="zoom:25%;" />
-
-
-
+<p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304122140486.png" alt="image-20230412214022203" style="zoom: 25%;" /></p>
+<h4 id="3、光滤波器——光栅"><a href="#3、光滤波器——光栅" class="headerlink" title="3、光滤波器——光栅"></a>3、光滤波器——光栅</h4><p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304151413172.png" alt="image-20230415141207848" style="zoom:25%;" /></p>
 <h4 id="4、光交换技术"><a href="#4、光交换技术" class="headerlink" title="4、光交换技术"></a>4、光交换技术</h4><p>传统电子交换机有限制，端口速率被限，实现全光通信是主要趋势。光交换是全光通信的关键技术。</p>
 <ul>
 <li>空分光交换——使光信号的传输通路在空间上发生变化。其核心部件为光开关。</li>
@@ -959,7 +926,7 @@ $$
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-07-16 16:16:03" itemprop="dateModified" datetime="2023-07-16T16:16:03+08:00">2023-07-16</time>
+                <time title="Modified: 2023-07-16 16:43:32" itemprop="dateModified" datetime="2023-07-16T16:43:32+08:00">2023-07-16</time>
               </span>
 
           
@@ -974,11 +941,11 @@ $$
 
       
           <h1 id="人类简史❤"><a href="#人类简史❤" class="headerlink" title="人类简史❤"></a>人类简史❤</h1><hr>
-<img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304081538196.jpg" style="zoom: 25%;" />
-
+<p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202304081538196.jpg" style="zoom: 25%;" /></p>
 <h2 id="一、书籍信息"><a href="#一、书籍信息" class="headerlink" title="一、书籍信息"></a>一、书籍信息</h2><blockquote>
-<p>作者: [<a target="_blank" rel="noopener" href="https://book.douban.com/author/1168901">以色列] 尤瓦尔·赫拉利</a><br>出版社: <a target="_blank" rel="noopener" href="https://book.douban.com/press/2400">中信出版社</a><br>出品方: <a target="_blank" rel="noopener" href="https://book.douban.com/producers/64">见识城邦</a><br>副标题: 从动物到上帝<br>原作名: A brief history of humankind<br>译者: <a target="_blank" rel="noopener" href="https://book.douban.com/search/%E6%9E%97%E4%BF%8A%E5%AE%8F">林俊宏</a><br>出版年: 2014-11<br>页数: 440<br>定价: 68.00元<br>装帧: 平装<br>ISBN: 9787508647357</p>
+<p>作者: <a target="_blank" rel="noopener" href="https://book.douban.com/author/1168901">[以色列] 尤瓦尔·赫拉利</a><br>出版社: <a target="_blank" rel="noopener" href="https://book.douban.com/press/2400">中信出版社</a><br>出品方: <a target="_blank" rel="noopener" href="https://book.douban.com/producers/64">见识城邦</a><br>副标题: 从动物到上帝<br>原作名: A brief history of humankind<br>译者: <a target="_blank" rel="noopener" href="https://book.douban.com/search/林俊宏">林俊宏</a><br>出版年: 2014-11<br>页数: 440<br>定价: 68.00元<br>装帧: 平装<br>ISBN: 9787508647357</p>
 </blockquote>
+<!--- more --->
 <h2 id="二、摘抄"><a href="#二、摘抄" class="headerlink" title="二、摘抄"></a>二、摘抄</h2><h3 id="序"><a href="#序" class="headerlink" title="序"></a>序</h3><ul>
 <li>在他看来，正是这种罪恶的人类中心主义，把具有神一般的能力、本来应该成为宇宙间“正能量”的智人，变成了一种不负责任、贪得无厌又极具破坏力的怪兽，结果给地球生态带来了一场“毁天灭地的人类洪水”。</li>
 <li>他对智人的所有批评，说到底只是一种“恨铁不成钢”的埋怨，而深藏于其中的，其实还是一种对人类命运的深深忧虑，以及对智人幡然悔悟、痛改前非的殷切期待。</li>
@@ -1063,76 +1030,6 @@ $$
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/02/03/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E6%80%BB%E7%BB%93/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/7391.jpeg">
-      <meta itemprop="name" content="jeacry">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jeacry's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/02/03/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">数字信号处理总结</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2023-02-03 16:07:35" itemprop="dateCreated datePublished" datetime="2023-02-03T16:07:35+08:00">2023-02-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-04 15:26:04" itemprop="dateModified" datetime="2023-02-04T15:26:04+08:00">2023-02-04</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="数字信号处理总结"><a href="#数字信号处理总结" class="headerlink" title="数字信号处理总结"></a>数字信号处理总结</h1><hr>
-<p>一、 时域离散信号与时域离散系统</p>
-<p>线性卷积公式：</p>
-<p><img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202302041459301.png" alt="image-20230204145842605"></p>
-<p>序列与冲激序列的卷积：               x(n－n0)&#x3D;x(n)*δ(n－n0)</p>
-<p>采样定理的重要公式：<img src="https://raw.githubusercontent.com/jeacry/Picture/master/bloglmg/202302041525673.png" alt="image-20230204145901568"></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
 
@@ -1201,7 +1098,7 @@ $$
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
